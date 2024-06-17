@@ -616,6 +616,126 @@
     }
 }
 
+.reasons {
+    background-color: #EAEAEA;
+    padding: 160px 0 80px;
+}
+
+.reasons__title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 2;
+    text-align: center;
+    color: #212529;
+    text-transform: uppercase;
+}
+
+.reason {
+    padding: 80px 0;
+    display: flex;
+    gap: 24px;
+}
+
+.reason:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.reason__info {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    justify-content: end;
+    color: #323232;
+    min-height: 404px;
+}
+
+.reason:nth-child(1) .reason__info {
+    background-image: url('../assets/images/reason-1_bg.svg');
+}
+
+.reason:nth-child(2) .reason__info {
+    background-image: url('../assets/images/reason-2_bg.svg');
+}
+
+.reason:nth-child(3) .reason__info {
+    background-image: url('../assets/images/reason-3_bg.svg');
+}
+
+.reason__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.04;
+    text-transform: uppercase;
+}
+
+.reason__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.66;
+}
+
+.reason__img {
+    max-width: 624px;
+    max-height: 375px;
+}
+
+@media screen and (max-width: 1280.9px) {
+    .reason__info {
+        min-height: 375px;
+    }
+
+    .reason__title {
+        font-size: 31px;
+    }
+}
+
+@media screen and (max-width: 1024.9px) {
+    .reason {
+        flex-direction: column;
+        padding: 48px 0 80px;
+        gap: 21px;
+        align-items: center;
+    }
+
+    .reason:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .reason__info {
+        max-width: 624px;
+        min-height: 310px;
+        background-size: auto 200px;
+    }
+
+    .reason__title {
+        margin-right: 45px;
+    }
+}
+
+@media screen and (max-width: 768.9px) {
+    .reason__img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 390.9px) {
+    .reasons__title {
+        font-size: 18px;
+    }
+
+    .reason__info {
+        background-size: auto 140px;
+        min-height: 345px;
+    }
+
+    .reason__title {
+        margin-right: 0;
+    }
+}
+
 
 /*  */
 
