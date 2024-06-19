@@ -354,6 +354,7 @@
                 class="subscribe-form__input"
                 name="firstName"
                 id="firstName"
+                required
               />
             </label>
             <label for="lastName" class="subscribe-form__label">
@@ -364,16 +365,18 @@
                 class="subscribe-form__input"
                 name="lastName"
                 id="lastName"
+                required
               />
             </label>
             <label for="email" class="subscribe-form__label">
               Email
               <span class="subscribe-form__required">*</span>
               <input
-                type="text"
+                type="email"
                 class="subscribe-form__input"
                 name="email"
                 id="email"
+                required
               />
             </label>
             <label
@@ -385,6 +388,7 @@
                 class="subscribe-form__check"
                 name="subscribe"
                 id="subscribe"
+                required
               />
               By checking this box, you agree to our End User Terms and Privacy
               Policy.
@@ -394,6 +398,7 @@
               class="subscribe-form__submit"
               value="Sign Me Up"
             />
+            <p class="subscribe-form__status"></p>
           </form>
         </div>
       </section>
@@ -423,7 +428,12 @@
                 NY 10001,<br />
                 USA
               </p>
-              <a href="#" class="contact__link">View Map</a>
+              <a
+                href="https://www.google.ru/maps/search/North+Javits+Center+445+11th+Ave,+New+York,+NY+10001,+USA/@40.7577877,-74.0037948,17z/data=!3m1!4b1?hl=ru&entry=ttu"
+                target="_blank"
+                class="contact__link"
+                >View Map</a
+              >
             </div>
           </div>
         </div>
